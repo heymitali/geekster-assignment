@@ -5,15 +5,15 @@ const Main = () => {
         <div className="w-3/5">
           <div className="text-[96px] mb-[16px] text-left font-roboto font-bold leading-tight">
             <h1 className="text-white ">
-              India's Tech School for the{" "}
+              {"India's Tech School for the "}
               <span className="text-[#2ab475]">Future World!</span>
             </h1>
           </div>
           <div className="text-[#747d82] text-[20px]">
             <p>
-              Become a top 1% professional in{" "}
-              <span className="text-white">Full Stack Development</span> and{" "}
-              <span className="text-white">Data Science</span>
+              {"Become a top 1% professional in "}
+              <span className="text-white">Full Stack Development</span>
+              {" and "} <span className="text-white">Data Science</span>
             </p>
           </div>
           <div className="flex justify-around mt-[24px] py-[20px] px-[16px] bg-[#142522] rounded-lg">
@@ -25,28 +25,32 @@ const Main = () => {
                 </p>
               </div>
               <div className="text-center mx-4">
-                <p className="font-roboto text-[20px] text-[#2ab475] ">1000+</p>
+                <p className="font-roboto text-[20px] text-[#2ab475] ">
+                  8.2 LPA
+                </p>
                 <p className="font-roboto text-[16px] text-[#747d82]">
-                  Students Placed
+                  Average CTC
                 </p>
               </div>
             </div>
             <div className="flex justify-evenly  w-1/2">
               <div className="text-center mx-4">
-                <p className="font-roboto text-[20px] text-[#2ab475] ">1000+</p>
+                <p className="font-roboto text-[20px] text-[#2ab475] ">
+                  33 LPA
+                </p>
                 <p className="font-roboto text-[16px] text-[#747d82]">
-                  Students Placed
+                  Highest CTC Job Offer
                 </p>
               </div>
               <div className="text-center mx-4">
-                <p className="font-roboto text-[20px] text-[#2ab475] ">1000+</p>
+                <p className="font-roboto text-[20px] text-[#2ab475] ">800+</p>
                 <p className="font-roboto text-[16px] text-[#747d82]">
-                  Students Placed
+                  Hiring Partners
                 </p>
               </div>
             </div>
           </div>
-          <div className="pt-[20px] text-[14px] font-light text-white">
+          <div className="pt-[30px] text-[14px] font-light text-white">
             <button className="px-[16px] h-[40px] w-[212px] items-center rounded-md flex justify-center bg-[#2ab475]">
               Request a Callback
               <svg
@@ -67,13 +71,13 @@ const Main = () => {
             </button>
           </div>
         </div>
-        <div className=" pl-[86.2px] flex justify-start items-center rounded-xl z-10 overflow-hidden">
+        <div className="pl-[86.2px] flex justify-start items-center rounded-xl z-10 overflow-hidden">
           <img
             src="https://images.geekster.in/thumbnail/header.png"
             className=" w-[550px] h-[320px] rounded-xl"
           ></img>
           <img
-            className="absolute transform translate-x-[193px] translate-y-[44px] z-0 "
+            className="absolute transform translate-x-[193px] translate-y-[44px] z-0"
             src="https://images.geekster.in/courses/home/header/home-header.svg"
           ></img>
         </div>

@@ -36,8 +36,19 @@ const Header = () => {
               <li className="w-[14rem] text-center p-2">Articles</li>
             </ul>
           ) : (
-            <div onClick={handleShowToggle} className="text-center px-[16px]">
+            <div
+              onClick={handleShowToggle}
+              className="text-center px-[16px] flex"
+            >
               <p> Level Up</p>
+              <div className="w-5 pl-1 flex align-items">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  ></path>
+                </svg>
+              </div>
             </div>
           )}
           <div className="text-center px-[16px]">
