@@ -12,8 +12,9 @@ const Main = () => {
           <div className="text-[#747d82] text-[20px]">
             <p>
               {"Become a top 1% professional in "}
-              <span className="text-white">Full Stack Development</span>
-              {" and "} <span className="text-white">Data Science</span>
+              <span className="text-white">Full Stack Development</span>{" "}
+              {" and "}
+              <span className="text-white">Data Science</span>
             </p>
           </div>
           <div className="flex justify-around mt-[24px] py-[20px] px-[16px] bg-[#142522] rounded-lg">
@@ -74,7 +75,7 @@ const Main = () => {
         <div className="pl-[86.2px] flex justify-start items-center rounded-xl z-10 overflow-hidden">
           <img
             src="https://images.geekster.in/thumbnail/header.png"
-            className=" w-[550px] h-[320px] rounded-xl"
+            className="w-[550px] h-[320px] rounded-xl"
           ></img>
           <img
             className="absolute transform translate-x-[193px] translate-y-[44px] z-0"

@@ -4,7 +4,6 @@ const Header = () => {
   const [show, setShow] = useState(false);
 
   const handleShowToggle = () => {
-    console.log("show >> ", show);
     setShow(!show);
   };
 
@@ -16,42 +15,37 @@ const Header = () => {
           className="w-[120px] h-[32px] text-white"
         />
         <div className="flex justify-between items-center mx-2 text-[18px] h-[40px]">
-          <div className="text-center px-[16px]">
+          <div className="text-center px-[16px] cursor-pointer">
             <p>Full Stack - MERN</p>
           </div>
-          <div className="text-center px-[16px]">
+          <div className="text-center px-[16px] cursor-pointer">
             <p>Data Science & Gen-AI</p>
           </div>
-          {show ? (
-            <ul className="w-[14rem] text-center">
-              <li
-                className="w-[14rem] text-center p-2"
-                onClick={handleShowToggle}
-              >
-                Level Up
-              </li>
-              <li className="w-[14rem] text-center p-2">
-                Certification and Courses
-              </li>
-              <li className="w-[14rem] text-center p-2">Articles</li>
-            </ul>
-          ) : (
-            <div
-              onClick={handleShowToggle}
-              className="text-center px-[16px] flex"
-            >
-              <p> Level Up</p>
-              <div className="w-5 pl-1 flex align-items">
-                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                  ></path>
-                </svg>
-              </div>
+          <div
+            onClick={handleShowToggle}
+            className="text-center px-[16px] flex cursor-pointer"
+          >
+            <p> Level Up</p>
+            <div className="w-5 pl-1 flex align-items">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                ></path>
+              </svg>
             </div>
+          </div>
+          {show && (
+            <ul className="absolute tranform translate-x-[25rem] translate-y-[3.6rem] bg-[#1d2e2b] text-left rounded-md text-[16px]">
+              <li className="w-[14rem] py-[6px] px-[10px] cursor-pointer">
+                Certification Courses
+              </li>
+              <li className="w-[14rem] pb-[6px] px-[10px] cursor-pointer">
+                Articles
+              </li>
+            </ul>
           )}
-          <div className="text-center px-[16px]">
+          <div className="text-center px-[16px] cursor-pointer">
             <p>Masterclass</p>
           </div>
         </div>
